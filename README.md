@@ -1,2 +1,2 @@
-# interactives
+# Interactives
 JOUR 320
