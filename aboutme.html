@@ -30,6 +30,30 @@ ul {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted purple
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .artist {
   border: 2px solid black;
 }
@@ -63,6 +87,24 @@ a:hover, a:active {
   grid-template-columns: 50% 50%;
 }
 
+#container {
+  display:flex;
+  flex-direction: row;
+}
+
+@media (orientation:portrait) {
+  #container {
+    flex-direction: column;
+  }
+}
+
+.item {
+  text-align: center;
+  padding: 50px;
+  border-width: 2px;
+  border-style: dotted;
+}
+
 </style>
 
 <body>
@@ -76,7 +118,14 @@ a:hover, a:active {
 </ul>
 
 <!-- This is an internal example! -->
-<p style= "color:purple">Hello World! I love Lady GAGA 💜!!</p>
+
+<div style=color:purple class="tooltip">Hello World! I love Lady GAGA 💜!!
+  <span class="tooltiptext">Actually I don't.</span>
+</div>
+
+<br>
+
+<br>
 
 <div class="grid-container">
 
@@ -99,6 +148,13 @@ a:hover, a:active {
 <br>
 
 <div class="overflowpractice">This some random text so that I can practice the overflow skill in CSS.</div>
+
+<br>
+
+<div id="container">
+  <div style="background-color:brown; color:white" class="item">Burger?</div>
+  <div style="background-color:pink" class="item">Hot Dog?</div>
+</div>
 
 <br>
 
