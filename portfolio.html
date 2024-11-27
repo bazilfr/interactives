@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bazil Frueh's Portfolio</title>   
+  <!-- Used title element to name the page on the tab -->
+  <title>Bazil Frueh's Portfolio</title>   
 <style>
+/* Used style elements to make nav bar, including margin, padding, overflow, and color */
     ul {
   list-style-type: none;
   margin: 0;
@@ -13,10 +15,12 @@
   background-color: #ffffff;
 }
 
+/* Used float to position the bar on the left */
 li {
   float: left;
 }
 
+/* Used display elements to stylize the nav bar, including text color and alignment */
 li a {
   display: block;
   color: rgb(0, 0, 0);
@@ -26,10 +30,12 @@ li a {
   font-family: Arial, Helvetica, sans-serif
 }
 
+/* Bar background is white when cursor is not hovering */
 li a:hover:not(.active) {
   background-color: #e7e7e7;
 }
 
+/* Used to define text style throughout the page */
 .text {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 100px;
@@ -38,6 +44,7 @@ li a:hover:not(.active) {
   margin-left: 80px;
 }
 
+/* Used to define paragraph style */
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,11 +52,13 @@ p {
 </head>
 <body>
 
+<!-- This is a simple JavaScript element pulled from Digital Ocean to display the current date and time at the top of the page. -->
 <script>
     let d = new Date();
     document.body.innerHTML = "<p>Today's date is " + d + "<p>"
 </script>
 
+<!-- Lists used to hold the links of the pages in the nav bar -->
 <div>
     <ul>
         <li><a href="portfolio.html">Home</a></li>
@@ -59,6 +68,7 @@ p {
       </ul>
 </div>
 
+<!-- Some simple text to welcome people to my portfolio page, using a text class to define its style. -->
 <div class="text">
   <h1 style="text-decoration: underline; text-decoration-style: dotted;">Bazil Frueh☻</h1>
   <p>Welcome to my portfolio!</p>
