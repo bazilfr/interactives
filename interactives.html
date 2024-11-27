@@ -79,13 +79,35 @@ These findings could have numerous implications, including the fact that people 
 are not driving as much during the weekend due to not having work. One reason to explain 
 why the most amount of traffic accidents occur on Fridays could be due to drunk driving 
 after people go out for the evening after work. 
-
 </pre>
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/20481735" data-width="50%"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20481735/thumbnail" width="50%" alt="chart visualization" /></noscript></div>
 <a class="text"; href="Arrests in Evanston by Race from September 2018 to December 2021.jpeg">Not displaying correctly? Click here.</a>
 
-<br>
+<pre class="text">
+For the above graph, which displays the share of arrests by race in Evanston from September 
+2018 to December 2021, I again found my data while browsing through the Evanston Data Portal, 
+which contained a page on Arrests in Evanston. 
+
+After downloading the data as a CSV, I then uploaded it into a Google Sheet. With the data, 
+I wanted to show whether a particular race made up a disproportionate majority of arrests, 
+which I did by using a pivot table and a formula. To make the pivot table, I assigned the 
+races to the rows and the count of arrests by race to values. To then find the percentage 
+shares, I used a simple division formula to divide arrests by race by the total number of 
+arrests.
+
+Using this data, I then uploaded it into Flourish, which turned it into a pie chart, showing 
+the percentage shares of arrests by different races out of 4,756 total arrests in the city.
+
+According to the graph, Black people arrested accounted for 61% of all arrests made in Evanston 
+within the particular timeframe. White people arrested accounted for 36%, while Asian people 
+arrested accounted for 2%. 
+
+Comparing this to 2020 Census data, even though only 16% of the city’s population identifies as 
+Black, they make up a disproportionate amount of arrests. Expanding on this, despite the fact 
+that around 59% of the city’s population identify as white and 10% percent identify as Asian, 
+they only make up 36% and 2% percent of arrests respectively.  
+</pre>
 
 <div class="text">
     <h1 style="text-decoration: underline; text-decoration-style: dotted;">Maps</h1>
@@ -94,7 +116,24 @@ after people go out for the evening after work.
 <div class="flourish-embed flourish-map" data-src="visualisation/20252564" data-width="50%"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20252564/thumbnail" width="50%" alt="Map showing the number of alternative fuel locations by Zip Code in Chicago, with more being accessible in the downtown parts of the city vs the South and West sides." /></noscript></div>
 <a class="text"; href="Number of Alternative Fuel Locations by Zip Code in Chicago as of November 2024.png">Not displaying correctly? Click here.</a>
 
-<br>
+<pre class="text">
+For the above map, which shows the number of alternative fuel locations (i.e. EV charging stations) 
+per zip code in Chicago, I first had to define the region geometry, which I was able to do by downloading 
+a GeoJSON file from the Chicago Data Portal and then uploading it into the regions geometry section of my 
+Flourish map. After doing this, I then assigned the geometry to column A, which contained the shapes of 
+the different zip codes, and IDs to match to column E, which contained the zip codes themselves.
+
+After establishing the geometry, I then downloaded a CSV of a data set containing the locations of alternative 
+fuel locations across Chicago. I then inserted a pivot table, assigning the zip codes to the rows and the 
+count of fuel locations per zip code to the corresponding values. After this, I then uploaded the pivot 
+table into my Flourish map, which shaded the regions to show where there is a larger concentration of 
+alternative fuel locations in the city.
+  
+With this map, I wanted to see whether there would be a disparity between the number of alternative fuel 
+locations between the North and South Sides of Chicago. Based on this, though the difference isn’t huge, 
+we can still see the lack of alternative fuel locations within the South parts of the city, with many 
+zip codes only containing one location in comparison to the around 7 or 8 in many North Side zip codes. 
+</pre>
 
 </body>
 </html>
