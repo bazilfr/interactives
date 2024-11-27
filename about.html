@@ -1,4 +1,4 @@
-<html></html>
+<html>
 <head>
     <title>Bazil Frueh's Portfolio</title>
 </head>
@@ -47,6 +47,19 @@ a:link, a:visited {
 
 a:hover, a:active {
   background-color: lightgrey;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img:hover {
+  animation: spin 2s linear;
 }
 </style>
 <body>
